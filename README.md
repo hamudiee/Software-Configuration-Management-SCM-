@@ -1,1 +1,1 @@
-# Software-Configuration-Management-SCM-
+Comprehensive SCM System for Simulated Software Project
