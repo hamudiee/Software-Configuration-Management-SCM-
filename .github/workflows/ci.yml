@@ -17,7 +17,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11' # change to your project’s Python version if needed
+          python-version: '3.11'  # change this if needed
 
       - name: Install dependencies
         run: |
@@ -29,8 +29,8 @@ jobs:
         run: |
           pytest --junitxml=pytest-report.xml
 
-      - name: Upload test report
+      - name: Upload test report artifact
         uses: actions/upload-artifact@v3
         with:
           name: pytest-report
-          path: pytest-report.xml
+          path: ./pytest-report.xml
